@@ -13,7 +13,8 @@ class Database(object):
 	                             db='VideoUpload',
 	                             charset='utf8mb4',
 	                             cursorclass=pymysql.cursors.DictCursor)
-
+	#sql is sql query (srtring)
+	#data is inserted data (array)
 	def query_insert(self, sql, data):
 		try:
 		    with self.connection.cursor() as cursor:
